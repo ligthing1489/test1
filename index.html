@@ -147,13 +147,13 @@
 <script src="js/app.js"></script>
 <script>
   // Load header and footer
-  fetch('../header-footer/header.html')
-    .then(response => response.text())
-    .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+ fetch('/header-footer/header.html')
+  .then(response => response.text())
+  .then(data => document.body.insertAdjacentHTML('afterbegin', data));
 
-  fetch('../header-footer/footer.html')
-    .then(response => response.text())
-    .then(data => document.body.insertAdjacentHTML('beforeend', data));
+fetch('/header-footer/footer.html')
+  .then(response => response.text())
+  .then(data => document.body.insertAdjacentHTML('beforeend', data));
 </script>
 </body>
 
