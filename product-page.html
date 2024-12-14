@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Grid</title>
+  <link rel="stylesheet" href="css/single-page.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/bottom.css">
+</head>
+<body>
+<div class="filter-container">
+  <div class="filter-section">
+    <h3>Category</h3>
+    <div class="filter-option">
+      <input type="radio" id="category-all" name="category" value="all" checked>
+      <label for="category-all">All</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="sneakers" name="category" value="sneakers">
+      <label for="sneakers">Sneakers</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="heels" name="category" value="heels">
+      <label for="heels">Heels</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="shirts" name="category" value="shirts">
+      <label for="shirts">Shirts</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="long-sleeves" name="category" value="long-sleeves">
+      <label for="long-sleeves">Long Sleeves</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="jackets" name="category" value="jackets">
+      <label for="jackets">Jackets</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="pants" name="category" value="pants">
+      <label for="pants">Pants</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="shorts" name="category" value="shorts">
+      <label for="shorts">Shorts</label>
+    </div>
+  </div>
+
+
+  <div class="filter-section">
+    <h3>Price</h3>
+    <div class="filter-option">
+      <input type="radio" id="price-all" name="price" value="all" checked>
+      <label for="price-all">All</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="price-0-50" name="price" value="0-50">
+      <label for="price-0-50">$0 - $50</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="price-50-100" name="price" value="50-100">
+      <label for="price-50-100">$50 - $100</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="price-100+" name="price" value="100+">
+      <label for="price-100+">$100+</label>
+    </div>
+  </div>
+
+
+  <div class="filter-section">
+    <h3>Gender</h3>
+    <div class="filter-option">
+      <input type="radio" id="gender-all" name="gender" value="all" checked>
+      <label for="gender-all">All</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </div>
+    <div class="filter-option">
+      <input type="radio" id="unisex" name="gender" value="unisex">
+      <label for="unisex">Unisex</label>
+    </div>
+  </div>
+</div>
+<ul></ul>
+<div id="product-grid" class="product-grid-container">
+
+</div>
+
+<script>
+
+  fetch('../header-footer/header.html')
+    .then(response => response.text())
+    .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+
+  fetch('../header-footer/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.body.insertAdjacentHTML('beforeend', data);
+
+      const footer = document.querySelector('footer');
+      footer.classList.add('custom-footer');
+    });
+</script>
+<script src="js/clothes-data.js"></script>
+</body>
+
+</html>
+

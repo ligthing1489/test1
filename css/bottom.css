@@ -1,0 +1,126 @@
+
+@font-face {
+    font-family: whyte-normal;
+    src: url(../fonts/ABCWhyte-Black-Trial.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: whyte-extralight;
+    src: url(../fonts/ABCWhyte-Extralight-Trial.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: whyte-light;
+    src: url(../fonts/ABCWhyte-Light-Trial.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.bottom-section {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
+}
+.bottom-inner-section {
+  position: relative;
+  width: 70%;
+  text-align: center;
+}
+  .bottom-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+
+  }
+  .bottom-header img{
+    padding-right: 10px;
+  }
+  .social-media-icons{
+    width: 3rem;
+  }
+  .bottom-logo{
+    height: 80px;
+
+
+  }
+  .phone-store-icon{
+    width: 8.1rem;
+  }
+.bottom-info-container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(93,93,93);
+  border-bottom: 1px solid rgb(93,93,93);
+  padding: 0;
+  color: white;
+}
+
+.bottom-info-list{
+    justify-content: space-between;
+
+  }
+  .info-flexbox{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    position: relative;
+
+  }
+  .info-flexbox h1{
+    font-size: 0.89rem;
+    font-family: whyte-normal;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style-type: none;
+    font-family: whyte-light;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+  ul li {
+    margin-bottom: 5px;
+  }
+  .info-flexbox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    width: 1px;
+    background-color: rgb(93,93,93);
+  }
+  .info-flexbox:last-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -10px;
+    width: 1px;
+    background-color: rgb(93,93,93);
+  }
+  .bottom-paragraph p{
+    color: white;
+    font-family: whyte-light;
+    text-align: center;
+    font-size: 0.93rem;
+    padding-top: 40px;
+    padding-bottom:40px ;
+  }
+  .copyright{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .copyright p{
+    font-family: whyte-light;
+    font-size: 1.2rem;
+    color: white;
+  }
+

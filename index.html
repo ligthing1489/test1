@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="StarStruck">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="icons/web-icon.svg" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/body-pics.css">
+  <link rel="stylesheet" href="css/second-section.css">
+  <link rel="stylesheet" href="css/bottom.css">
+</head>
+
+<body>
+
+<div id="Home" class="main-content">
+<div class="first-section-pic">
+  <img class="front-page-pic" src="image/pic1.1.avif">
+      <div class="catch-phrase">
+        <p class="front-pic-text1">Find your Stardom</p>
+        <p class="front-pic-text2">Shop Now</p>
+      </div>
+</div>
+<div class="second-section-grid">
+  <div class="clothes-grid">
+    <img class="pic-grid" src="image/streetwear1.jpg">
+    <p class="grid-cat">StreetWear</p>
+  </div>
+  <div class="clothes-grid">
+    <img class="pic-grid" src="image/formal%20wear.jpg">
+    <p class="grid-cat">Classy</p>
+  </div>
+  <div class="clothes-grid">
+    <img class="pic-grid" src="image/casual.jpg">
+    <p class="grid-cat">Casual</p>
+  </div>
+  <div class="clothes-grid">
+    <img class="pic-grid" src="image/outerwear2.jpg">
+    <p class="grid-cat">Outerwear</p>
+  </div>
+  <div class="clothes-grid">
+    <img class="pic-grid-pants" src="image/jeans.jpg">
+    <p class="grid-cat">Bottoms</p>
+  </div>
+  <div class="clothes-grid">
+    <img class="pic-grid" src="image/shoes.jpg">
+    <p class="grid-cat">Shoes</p>
+  </div>
+</div>
+
+<div class="product-title">
+    <div class="product-title-container">
+      <img class="arrow1" src="image/svg/black-arrow1.svg">
+      <p class="product-header">IT MAY INTEREST YOU</p>
+    </div>
+</div>
+<div class="product-models">
+  <div class="product-container">
+    <a href="Product-Detail-Page.html?productId=18">
+    <div>
+      <img class="product-display" src="image/front-page-models/model1.jpg">
+    </div>
+    <div class="front-page-product-text">
+      <p class="product-name">Wide-leg plush pants</p>
+      <p class="product-price">$48.92</p>
+    </div>
+    </a>
+  </div>
+  <a href="Product-Detail-Page.html?productId=19">
+  <div class="product-container">
+    <div>
+      <img class="product-display" src="image/front-page-models/shoes-model.jpg">
+    </div>
+    <div class="front-page-product-text">
+      <p class="product-name">Deconstructed skater sneakers</p>
+      <p class="product-price">$75.90</p>
+    </div>
+  </div>
+    </a>
+  <a href="Product-Detail-Page.html?productId=45">
+  <div class="product-container">
+    <div>
+      <img class="product-display" src="image/front-page-models/fem-model1.jpg">
+    </div>
+    <div class="front-page-product-text">
+      <p class="product-name">Cable-knit crew neck sweater</p>
+      <p class="product-price">$45.93</p>
+    </div>
+  </div>
+    </a>
+  <a href="Product-Detail-Page.html?productId=47">
+  <div class="product-container">
+    <div>
+      <img class="product-display" src="image/front-page-models/model2.jpg">
+    </div>
+    <div class="front-page-product-text">
+      <p class="product-name">Printed chenille sweater</p>
+      <p class="product-price">$49.90</p>
+    </div>
+  </div>
+  </a>
+  <a href="Product-Detail-Page.html?productId=39">
+  <div class="product-container">
+    <div>
+      <img class="product-display" src="image/front-page-models/fem-model2.jpg">
+    </div>
+    <div class="front-page-product-text">
+      <p class="product-name">Denim jacket with animal print</p>
+      <p class="product-price">$79.90</p>
+    </div>
+  </div>
+  </a>
+</div>
+<div class="adverting2-section">
+  <div class="adverting2-innerbox">
+    <p class="adverting2-title">GET 20% OFF</p>
+    <p class="adverting2-text">Students save all year around sign up now for an extra 20% off </p>
+    <button class="adverting2-button">Sign up</button>
+  </div>
+</div>
+
+<div class="adverting1-section">
+  <img class="model-ad" src="image/ad1.jpg">
+  <div class="adverting1-text">
+    <p>Be StarStruck by Your Own Reflection.</p>
+    <button  class="adverting1-button" onclick="Youtube.com">Shop Now</button>
+  </div>
+</div>
+
+
+</div>
+
+<script src="js/app.js"></script>
+<script>
+  // Load header and footer
+  fetch('../header-footer/header.html')
+    .then(response => response.text())
+    .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+
+  fetch('../header-footer/footer.html')
+    .then(response => response.text())
+    .then(data => document.body.insertAdjacentHTML('beforeend', data));
+</script>
+</body>
+
+</html>

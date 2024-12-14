@@ -1,0 +1,157 @@
+@font-face {
+  font-family: whyte-normal;
+  src: url(../fonts/ABCWhyte-Black-Trial.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: whyte-extralight;
+  src: url(../fonts/ABCWhyte-Extralight-Trial.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: whyte-light;
+  src: url(../fonts/ABCWhyte-Light-Trial.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.product-title{
+  display: flex;
+  height: 11dvh;
+
+}
+.product-title-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+  left: 0;
+  right: 0;
+  padding-left: 25px;
+}
+.product-header{
+  font-family:whyte-light;
+  font-size: 3rem;
+}
+.arrow1{
+  height: 2.8rem;
+}
+.product-models{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 4px;
+  padding-bottom: 80px;
+}
+
+.product-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+
+
+}
+.product-display{
+  width: 100%;
+  margin-bottom: 12px;
+
+}
+.front-page-product-text{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  padding-left: 12px;
+
+}
+.front-page-product-text p{
+  margin: 0;
+}
+.product-name{
+  font-family: whyte-light;
+  font-size: 0.90rem;
+}
+.product-price{
+  font-family: whyte-normal;
+  font-size: 0.80rem;
+}
+.adverting2-section{
+  display: flex;
+  flex-direction: row;
+  flex: 1fr;
+  background-color: black;
+  position: relative;
+  padding-bottom: 500px;
+}
+.adverting2-innerbox{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.adverting2-innerbox p{
+  color: white;
+  margin: 0;
+}
+.adverting2-title{
+  font-size: 3rem;
+  font-family: whyte-normal;
+}
+.adverting2-text{
+  font-size: 1.3rem;
+  font-family: whyte-light;
+}
+.adverting2-button {
+  width: 150px;
+  height: 50px;
+  border-radius: 75px;
+  background-color: white;
+  color: black;
+  font-size: 1.6rem;
+  font-family: whyte-light;
+  align-self: center;
+  margin-top: 12px;
+}
+.adverting1-section{
+  width: 100%;
+  height: 95dvh;
+  overflow: hidden;
+  padding-bottom: 10px;
+  position: relative;
+}
+.model-ad{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.adverting1-text{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  bottom: 9%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+
+
+
+}
+.adverting1-text p{
+  color: white;
+  font-family: whyte-normal;
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+.adverting1-button{
+  align-self: center;
+  font-size: 1.4rem;
+  font-family: whyte-light;
+  width: 150px;
+  height: 50px;
+  border-radius: 75px;
+}
+
+

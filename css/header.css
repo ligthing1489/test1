@@ -1,0 +1,138 @@
+body{
+  margin: 0;
+}
+.top-header{
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  justify-content: space-between;
+  height: 56px;
+  padding-left: 30px;
+  padding-right: 30px;
+  z-index: 100;
+  background-color: white;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 19px;
+  font-family: "Segoe UI";
+}
+.header-cats {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+.header-cats:hover{
+  background-color: lightpink;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.middle-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.company-logo{
+  height: 90px;
+  display: block;
+  padding-left: 200px;
+  margin: 0;
+}
+.right-section{
+  display: flex;
+  align-items: center;
+  margin-right:19px ;
+  width:304px;
+  justify-content: space-between;
+}
+.heart-icon, .login-icon, .heart-icon, .shopping-icon, .search-icon{
+  height: 24px;
+}
+.searchbar{
+  height: 32px;
+  width: 136px;
+  background-color: rgb(245,245,245);
+  border-radius: 68px;
+  border-width: 0px;
+  padding: 0px 0px 0px 35px;
+
+}
+.search-icon{
+  position: absolute;
+  left:10px;
+
+}
+.search-container{
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+.shopping-icon-container{
+  position: relative;
+
+}
+.fly-item{
+  position: absolute;
+  display: flex;
+  top: -2px;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  background-color: black ;
+  border-radius: 50%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: whyte-light;
+  font-size: 0.75rem;
+
+}
+.item-number{
+
+}
+.dropdown {
+  position: relative;
+}
+
+.mega {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 10px;
+}
+
+.mega .flexcol ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mega .flexcol ul li {
+  margin: 5px 0;
+}
+
+.mega .flexcol ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "whyte-light";
+}
+
+.header-cats:hover + .mega,
+.dropdown:hover .mega {
+  display: block;
+}
+
+
+
+

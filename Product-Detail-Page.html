@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/bottom.css">
+  <link rel="stylesheet" href="css/product-detail.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<body>
+
+<div class="product-detail-container">
+  <div class="product-image-slider swiper">
+    <div class="swiper-wrapper" id="image-slider">
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <div class="product-info-container">
+    <h1 class="product-title" id="product-title">Product Title</h1>
+    <div class="product-price">
+      <span class="sale-price" id="product-price">$0.00</span>
+    </div>
+
+    <div class="product-size-selection">
+      <label for="size">Size:</label>
+      <select id="size">
+        <option value="xs">XS</option>
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+      </select>
+    </div>
+
+    <div class="cart-action-container">
+      <button class="add-to-cart-btn">Add to cart</button>
+    </div>
+
+    <div class="product-details-section">
+      <div class="section-header">
+        <h2>Details</h2>
+        <span class="section-subtitle">Composition, care, and more</span>
+        <img src="icons/plus.svg" alt="Expand" class="expand-btn">
+      </div>
+      <div class="section-content">
+        <p>Provide detailed product information here.</p>
+      </div>
+    </div>
+
+    <div class="product-custom-section">
+      <div class="section-header">
+        <h2>Custom</h2>
+        <span class="section-subtitle">Personalization options</span>
+        <img src="icons/plus.svg" alt="Expand" class="expand-btn">
+      </div>
+      <div class="section-content">
+        <p>Provide any custom options or features here.</p>
+      </div>
+    </div>
+
+    <div class="product-custom-section delivery-returns">
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/product-details-JS.js"></script>
+<script>
+
+  fetch('../header-footer/header.html')
+    .then(response => response.text())
+    .then(data => document.body.insertAdjacentHTML('afterbegin', data));
+
+  fetch('../header-footer/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.body.insertAdjacentHTML('beforeend', data);
+
+      // Add a class to the footer if needed for custom styling
+      const footer = document.querySelector('footer');
+      footer.classList.add('custom-footer');
+    });
+</script>
+</body>
+</html>
